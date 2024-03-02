@@ -6,19 +6,17 @@ class Program
     {
         Console.WriteLine("Welcome Guess My Number game!");
 
-        Random random = new Random();
-            bool playAgain = true;
+        Random random = new Random(); // Random generator
+        bool playAgain = true;  // Variable if the user wants to play again or no
 
-            while (playAgain)
+        while (playAgain)
             {
-                int magicNumber = random.Next(1, 101); 
-                int guessCount = 0;
+                int magicNumber = random.Next(1, 101); // Generate a random number
 
                 while (true)
                 {
                     Console.WriteLine("What is your guess?");
                     int guess = int.Parse(Console.ReadLine());
-                    guessCount++;
 
                     if (guess < magicNumber)
                     {
@@ -35,10 +33,12 @@ class Program
                     }
                 }
 
-                Console.WriteLine("Do you want to play again? (yes/no)");
+                // Ask to the user if want to play again or not
+                Console.WriteLine("Do you want to play again? (yes/no)"); 
                 string response = Console.ReadLine();
 
-                if (response.ToLower() != "yes")
+                // Check the answer to play again or exit the loop
+                if (response.ToLower() != "yes") 
                 {
                     playAgain = false;
                 }
@@ -47,3 +47,4 @@ class Program
             Console.WriteLine("Thanks for playing Guess My Number!");
         }
     }
+   

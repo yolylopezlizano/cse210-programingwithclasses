@@ -7,7 +7,7 @@ class Program
     {
         List<int> numbers = new List<int>();
 
-            Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
             while (true)
             {
@@ -26,16 +26,19 @@ class Program
                 return;
             }
 
+            //Compute the sum of the numbers
             int sum = numbers.Sum();
 
+            // Compute the average of the numbers
             double average = numbers.Average();
 
+            //Find the maximum number
             int maxNumber = numbers.Max();
 
+            //Display requirements
             Console.WriteLine($"The sum is: {sum}");
             Console.WriteLine($"The average is: {average}");
             Console.WriteLine($"The largest number is: {maxNumber}");
             
             }
         }
-    
