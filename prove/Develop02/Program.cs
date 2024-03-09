@@ -57,7 +57,7 @@ class Journal
         {
             Prompt = selectedPrompt,
             Response = response,
-            Date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+            Date = DateTime.Now.ToString("MM-dd-yyyy HH:mm:ss")
         };
 
         // Add entry to the journal
