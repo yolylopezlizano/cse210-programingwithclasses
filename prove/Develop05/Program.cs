@@ -129,9 +129,9 @@ class Program
     }
 
     static void ListGoals()
-    {
-        Console.WriteLine("List of Goals:");
-        for (int i = 0; i < goals.Count; i++)
+        {
+            Console.WriteLine("List of Goals:");
+            for (int i = 0; i < goals.Count; i++)
         {
             string completionStatus = goals[i].Completions == goals[i].CompletionTarget ? "x" : "";
             int remainingTimes = goals[i].CompletionTarget - goals[i].Completions % goals[i].CompletionTarget;
